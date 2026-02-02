@@ -1,0 +1,6 @@
+CREATE TABLE buku (
+    id_buku INT PRIMARY KEY AUTO_INCREMENT,
+    judul VARCHAR(150),
+    pengarang VARCHAR(100),
+    stok INT
+);
