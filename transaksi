@@ -1,0 +1,9 @@
+CREATE TABLE transaksi_buku (
+    id_transaksi INT PRIMARY KEY AUTO_INCREMENT,
+    id_user INT,
+    id_buku INT,
+    tanggal_pinjam DATE,
+    status ENUM('pinjam', 'kembali'),
+    FOREIGN KEY (id_user) REFERENCES users(id_user),
+    FOREIGN KEY (id_buku) REFERENCES buku(id_buku)
+);
