@@ -4,3 +4,10 @@ CREATE TABLE buku (
     pengarang VARCHAR(100),
     stok INT
 );
+
+INSERT INTO buku (judul, pengarang, penerbit, tahun_terbit, stok) VALUES 
+('Laskar Pelangi', 'Andrea Hirata', 'Bentang Pustaka', 2005, 10),
+('Filosofi Teras', 'Henry Manampiring', 'Kompas', 2018, 7),
+('Bumi Manusia', 'Pramoedya Ananta Toer', 'Lentera Dipantara', 1980, 5),
+('Negeri 5 Menara', 'Ahmad Fuadi', 'Gramedia', 2009, 8),
+('Pulang', 'Tere Liye', 'Republika', 2012, 4);
