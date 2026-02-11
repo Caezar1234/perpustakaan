@@ -7,3 +7,10 @@ CREATE TABLE users (
     telepon VARCHAR(15),
     alamat TEXT
 );
+
+INSERT INTO users (nama_lengkap, username, password, role, telepon, alamat) VALUES 
+('Caezar Admin', 'admin1', 'pass123', 'admin', '0812345', 'Jakarta'),
+('Budi Santoso', 'budi_member', 'budi123', 'anggota', '0812346', 'Bandung'),
+('Siti Aminah', 'siti_member', 'siti123', 'anggota', '0812347', 'Surabaya'),
+('Rizky Pratama', 'rizky_p', 'rizky123', 'anggota', '0812348', 'Jogja'),
+('Dewi Lestari', 'dewi_ls', 'dewi123', 'anggota', '0812349', 'Malang');
