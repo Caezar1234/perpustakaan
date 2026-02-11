@@ -3,7 +3,7 @@ CREATE TABLE users (
     nama_lengkap VARCHAR(100) NOT NULL,
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    role ENUM('admin', 'anggota') NOT NULL, -- Pembeda status
+    role ENUM('admin', 'anggota') NOT NULL, 
     telepon VARCHAR(15),
     alamat TEXT
 );
