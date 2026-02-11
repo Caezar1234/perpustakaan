@@ -1,0 +1,7 @@
+SELECT 
+    users.nama_lengkap, 
+    buku.judul, 
+    transaksi_buku.tanggal_pinjam
+FROM transaksi_buku
+JOIN users ON transaksi_buku.id_user = users.id_user
+JOIN buku ON transaksi_buku.id_buku = buku.id_buku;
