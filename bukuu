@@ -2,8 +2,11 @@ CREATE TABLE buku (
     id_buku INT PRIMARY KEY AUTO_INCREMENT,
     judul VARCHAR(150),
     pengarang VARCHAR(100),
+    penerbit VARCHAR(100),  
+    tahun_terbit INT,        
     stok INT
 );
+
 
 INSERT INTO buku (judul, pengarang, penerbit, tahun_terbit, stok) VALUES 
 ('Laskar Pelangi', 'Andrea Hirata', 'Bentang Pustaka', 2005, 10),
