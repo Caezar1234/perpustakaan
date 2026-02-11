@@ -7,3 +7,10 @@ CREATE TABLE transaksi_buku (
     FOREIGN KEY (id_user) REFERENCES users(id_user),
     FOREIGN KEY (id_buku) REFERENCES buku(id_buku)
 );
+
+INSERT INTO transaksi_buku (id_user, id_buku, tanggal_pinjam, status) VALUES 
+(2, 1, '2026-02-01', 'pinjam'),
+(3, 2, '2026-02-02', 'pinjam'),
+(4, 3, '2026-02-03', 'kembali'),
+(5, 5, '2026-02-04', 'pinjam'),
+(2, 4, '2026-02-05', 'pinjam');
