@@ -5,3 +5,5 @@ SELECT
 FROM transaksi_buku
 JOIN users ON transaksi_buku.id_user = users.id_user
 JOIN buku ON transaksi_buku.id_buku = buku.id_buku;
+
+ELECT SUM(stok) AS total_seluruh_stok FROM buku;
